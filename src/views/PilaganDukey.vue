@@ -933,6 +933,6 @@ onMounted(() => {
 
 <template>
   <main>
-    <div id="main" style="width: 300%; height: 550vh; background: #ffffff"></div>
+    <div id="main" style="width: 400rem; height: 450rem; background: #ffffff"></div>
   </main>
 </template>
