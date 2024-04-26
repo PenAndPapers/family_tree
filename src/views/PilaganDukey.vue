@@ -85,7 +85,7 @@ const data = reactive({
               collapsed: false
             },
             {
-              name: 'Terio Pilagan',
+              name: 'Eleuterio Pilagan aka "Terio"',
               children: [
                 {
                   name: 'Aida Pilagan - Dauzon',
@@ -401,7 +401,7 @@ const data = reactive({
           collapsed: false
         },
         {
-          name: 'Sofia (Basil) Awigan Pilagan - 2nd wife',
+          name: 'Sofia Awigan Pilagan aka "Basil" - 2nd wife',
           children: [
             {
               name: 'Simplicio Awigan Pilagan',
