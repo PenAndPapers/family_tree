@@ -2,6 +2,8 @@
 import { computed, onMounted, reactive } from 'vue'
 import * as echarts from 'echarts'
 
+const imgUrl = new URL('../assets/Pilagan-Dukey_Genealogy.png', import.meta.url).href
+
 // chart data
 const data = reactive({
   name: 'Dukey Pilagan',
@@ -1189,6 +1191,18 @@ onMounted(() => {
 
 <template>
   <main>
+    <a :href="imgUrl" target="_blank" class="link">View as image</a>
     <div id="main" style="width: 400rem; height: 350rem; background: #ffffff"></div>
   </main>
 </template>
+
+<style scoped>
+.link {
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+  z-index: 999;
+  font-weight: 500;
+  color: #000;
+}
+</style>
