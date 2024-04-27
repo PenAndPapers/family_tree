@@ -1144,7 +1144,7 @@ const chartOption = computed(() => {
         edgeShape: 'polyline',
         edgeForkPosition: '63%',
         lineStyle: {
-          color: '#aaaaaa'
+          color: '#777777'
         },
         label: {
           position: 'left',
