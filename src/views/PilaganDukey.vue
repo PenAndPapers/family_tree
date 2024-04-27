@@ -15,7 +15,7 @@ const data = reactive({
       name: 'Ignacio Pilagan',
       children: [
         {
-          name: 'Sabadia Pilagan',
+          name: 'Sabadia Pilagan - 1st wife',
           children: [
             {
               name: 'Marcus Pilagan',
