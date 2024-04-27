@@ -5,36 +5,84 @@ import * as echarts from 'echarts'
 // chart data
 const data = reactive({
   name: 'Dukey Pilagan',
+  details: {
+    wife: ''
+  },
   children: [
     {
       name: 'Ignacio Pilagan',
       children: [
         {
-          name: 'Name unknown - 1st wife',
+          name: 'Sabadia Pilagan',
           children: [
             {
               name: 'Marcus Pilagan',
+              details: {
+                wife: ''
+              },
               children: [
                 {
                   name: 'Nenita Pilagan - Ngayaan',
+                  details: {
+                    husband: 'Sidoro Ngayaan'
+                  },
                   children: [
                     {
-                      name: 'Agnes Pilagan Ngayaan - Salbino'
+                      name: 'Agnes Pilagan Ngayaan - Salbino',
+                      details: {
+                        husband: 'Romualdo Salbino'
+                      }
                     },
                     {
-                      name: 'Leticia Pilagan Ngayaan - Portem'
+                      name: 'Leticia Pilagan Ngayaan - Portem',
+                      details: {
+                        husband: 'Nolito Portem'
+                      }
                     },
                     {
-                      name: 'Juanito Pilagan Ngayaan'
+                      name: 'Juanito Pilagan Ngayaan',
+                      details: {
+                        wife: 'Norma Dang-alan'
+                      }
                     },
                     {
-                      name: 'Fidel Pilagan Ngayaan'
+                      name: 'Fidel Pilagan Ngayaan',
+                      details: {
+                        wife: 'Gina Maog'
+                      },
+                      children: [
+                        {
+                          name: 'Reyn Pilagan Maog Ngayaan',
+                          details: {
+                            wife: 'Dara Caguay Paetan - Ngayaan'
+                          },
+                          children: [
+                            {
+                              name: '-'
+                            },
+                            {
+                              name: '-'
+                            }
+                          ],
+                          collapsed: false
+                        },
+                        {
+                          name: '-'
+                        },
+                        {
+                          name: 'Fidel Pilagan Maog Ngayaan Jr.'
+                        }
+                      ],
+                      collapsed: false
                     }
                   ],
                   collapsed: false
                 },
                 {
                   name: 'Puring Pilagan - Polides',
+                  details: {
+                    husband: ''
+                  },
                   children: [
                     {
                       name: 'Dominga Pilagan Polides - Pastrana'
@@ -65,6 +113,9 @@ const data = reactive({
                 },
                 {
                   name: 'Enrique Pilagan',
+                  details: {
+                    wife: ''
+                  },
                   children: [
                     {
                       name: 'Joel Pilagan'
@@ -86,12 +137,21 @@ const data = reactive({
             },
             {
               name: 'Eleuterio Pilagan aka "Terio"',
+              details: {
+                wife: ''
+              },
               children: [
                 {
                   name: 'Aida Pilagan - Dauzon',
+                  details: {
+                    husband: ''
+                  },
                   children: [
                     {
                       name: 'Doracion Pilagan Dauzon - Mata',
+                      details: {
+                        husband: ''
+                      },
                       children: [
                         {
                           name: 'Mark Anthony Pilagan Dauzon Mata'
@@ -116,6 +176,9 @@ const data = reactive({
                     },
                     {
                       name: 'Zenaida Pilagan Dauzon - Bartolome',
+                      details: {
+                        husband: ''
+                      },
                       children: [
                         {
                           name: 'Frema Pilagan Dauzon Bartolome'
@@ -143,28 +206,46 @@ const data = reactive({
                     },
                     {
                       name: 'Joe Pilagan Dauzon',
+                      details: {
+                        wife: ''
+                      },
                       children: []
                     },
                     {
-                      name: 'Fibe Pilagan Dauzon - Wanagen'
+                      name: 'Fibe Pilagan Dauzon - Wanagen',
+                      details: {
+                        husband: ''
+                      }
                     },
                     {
-                      name: 'Daisy Pilagan Dauzon Tamayo'
+                      name: 'Daisy Pilagan Dauzon Tamayo',
+                      details: {
+                        husband: ''
+                      }
                     }
                   ],
                   collapsed: false
                 },
                 {
                   name: 'Arthur Baclayen Pilagan',
+                  details: {
+                    wife: ''
+                  },
                   children: [
                     {
                       name: 'Arlene Pilagan'
                     },
                     {
-                      name: 'Melanie Pilagan - Ballester'
+                      name: 'Melanie Pilagan - Ballester',
+                      details: {
+                        husband: ''
+                      }
                     },
                     {
-                      name: 'Mary Anne Pilagan - Bung-e'
+                      name: 'Mary Anne Pilagan - Bung-e',
+                      details: {
+                        husband: ''
+                      }
                     },
                     {
                       name: 'Maricel Pilagan'
@@ -174,6 +255,9 @@ const data = reactive({
                 },
                 {
                   name: 'Domingo Pilagan Sr.',
+                  details: {
+                    wife: ''
+                  },
                   children: [
                     {
                       name: 'Delia Pilagan'
@@ -191,7 +275,10 @@ const data = reactive({
                       name: 'Maricel Pilagan'
                     },
                     {
-                      name: 'Catherine Pilagan - Bal-iyang'
+                      name: 'Catherine Pilagan - Bal-iyang',
+                      details: {
+                        husband: ''
+                      }
                     },
                     {
                       name: 'Domingo Pilagan Jr.'
@@ -201,24 +288,39 @@ const data = reactive({
                 },
                 {
                   name: 'Donato Pilagan Sr.',
+                  details: {
+                    wife: ''
+                  },
                   children: [
                     {
-                      name: 'Michele Pilagan - Day-a'
+                      name: 'Michele Pilagan - Day-a',
+                      details: {
+                        husband: ''
+                      }
                     },
                     {
                       name: 'Jayson Pilagan'
                     },
                     {
-                      name: 'Raquel Pilagan - Malaggan'
+                      name: 'Raquel Pilagan - Malaggan',
+                      details: {
+                        husband: ''
+                      }
                     },
                     {
                       name: 'Fema Pilagan - Padua'
                     },
                     {
-                      name: 'Monette Pilagan - Ledummeng'
+                      name: 'Monette Pilagan - Ledummeng',
+                      details: {
+                        husband: ''
+                      }
                     },
                     {
-                      name: 'Jenny Pilagan - Tingey'
+                      name: 'Jenny Pilagan - Tingey',
+                      details: {
+                        husband: ''
+                      }
                     },
                     {
                       name: 'Hover Pilagan'
@@ -240,24 +342,39 @@ const data = reactive({
                 },
                 {
                   name: 'Crecensia Pilagan - Ubuan',
+                  details: {
+                    husband: ''
+                  },
                   children: [
                     {
-                      name: 'Maribeth Pilagan Ubuan - Resureccion'
+                      name: 'Maribeth Pilagan Ubuan - Resureccion',
+                      details: {
+                        husband: ''
+                      }
                     },
                     {
                       name: 'Aris Pilagan Ubuan'
                     },
                     {
-                      name: 'Janeth Pilagan Ubuan - Daus'
+                      name: 'Janeth Pilagan Ubuan - Daus',
+                      details: {
+                        husband: ''
+                      }
                     },
                     {
-                      name: 'Aiza Pilagan Ubuan - Compra'
+                      name: 'Aiza Pilagan Ubuan - Compra',
+                      details: {
+                        husband: ''
+                      }
                     }
                   ],
                   collapsed: false
                 },
                 {
                   name: 'Lelia Pilagan - Smith',
+                  details: {
+                    husband: ''
+                  },
                   children: [
                     {
                       name: 'Cristopher Pilagan Smith'
@@ -267,6 +384,9 @@ const data = reactive({
                 },
                 {
                   name: 'Julio Pilagan',
+                  details: {
+                    wife: ''
+                  },
                   children: [
                     {
                       name: 'John Michael Pilagan'
@@ -288,6 +408,9 @@ const data = reactive({
                 },
                 {
                   name: 'Marieta Pilagan - Liwan',
+                  details: {
+                    husband: ''
+                  },
                   children: [
                     {
                       name: 'Gilbert Pilagan Liwan'
@@ -306,9 +429,15 @@ const data = reactive({
                 },
                 {
                   name: 'Alfredo Pilagan',
+                  details: {
+                    wife: ''
+                  },
                   children: [
                     {
-                      name: 'Alex Pilagan - Acosta'
+                      name: 'Alex Pilagan - Acosta',
+                      details: {
+                        husband: ''
+                      }
                     },
                     {
                       name: 'Arnel Pilagan'
@@ -324,12 +453,18 @@ const data = reactive({
                 },
                 {
                   name: 'Margareta Pilagan - Comiles',
+                  details: {
+                    husband: ''
+                  },
                   children: [
                     {
                       name: 'Leneth Pilagan Comiles'
                     },
                     {
-                      name: 'Keiry Pilagan Comiles - Pacio'
+                      name: 'Keiry Pilagan Comiles - Pacio',
+                      details: {
+                        husband: ''
+                      }
                     },
                     {
                       name: 'Ryan Pilagan Comiles'
@@ -341,7 +476,7 @@ const data = reactive({
                       name: 'Benjie Pilagan Comiles'
                     },
                     {
-                      name: 'Melo Jane  Pilagan Comiles'
+                      name: 'Melo Jane Pilagan Comiles'
                     }
                   ],
                   collapsed: false
@@ -404,13 +539,19 @@ const data = reactive({
           name: 'Sofia Awigan Pilagan aka "Basil" - 2nd wife',
           children: [
             {
-              name: 'Simplicio Awigan Pilagan',
+              name: 'Simplicio Awigan Pilagan aka "Ensiong"',
+              details: {
+                wife: 'Rosita Quila Postin - Pilagan'
+              },
               children: [
                 {
                   name: 'Diego Postin Pilagan'
                 },
                 {
                   name: 'Peter Postin Pilagan',
+                  details: {
+                    wife: 'Eliza Arellano Sunio - Pilagan'
+                  },
                   children: [
                     {
                       name: 'Lister Sunio Pilagan'
@@ -420,6 +561,9 @@ const data = reactive({
                     },
                     {
                       name: 'Liezel Sunio Pilagan - Barba',
+                      details: {
+                        husband: 'John Von Barba'
+                      },
                       children: [
                         {
                           name: 'Zamira Pilagan Barba'
@@ -441,6 +585,9 @@ const data = reactive({
                 },
                 {
                   name: 'Marilou Postin Pilagan - Bigsot',
+                  details: {
+                    husband: 'Romeo Bigsot'
+                  },
                   children: [
                     {
                       name: 'Jerome Pilagan Bigsot'
@@ -450,6 +597,9 @@ const data = reactive({
                 },
                 {
                   name: 'Larry Postin Pilagan',
+                  details: {
+                    wife: 'Corazon Caguay - Pilagan'
+                  },
                   children: [
                     {
                       name: 'Frankie Caguay Pilagan'
@@ -458,19 +608,31 @@ const data = reactive({
                   collapsed: false
                 },
                 {
-                  name: 'Amy Postin Pilagan - Jackson'
+                  name: 'Amy Postin Pilagan - Jackson',
+                  details: {
+                    husband: 'Frank Jackson'
+                  }
                 }
               ],
               collapsed: false
             },
             {
-              name: 'Espiritu Awigan Pilagan',
+              name: 'Espiritu Awigan Pilagan aka "Espir"',
+              details: {
+                wife: ''
+              },
               children: [
                 {
                   name: 'Eulogio Budao Pilagan Sr.',
+                  details: {
+                    wife: ''
+                  },
                   children: [
                     {
                       name: 'Emily Ruth Batallang Pilagan - Ebeng',
+                      details: {
+                        husband: ''
+                      },
                       children: [
                         {
                           name: 'Krishna Pilagan Ebeng'
@@ -486,6 +648,9 @@ const data = reactive({
                     },
                     {
                       name: 'Eden Batallang Pilagan - Feraldo',
+                      details: {
+                        husband: ''
+                      },
                       children: [
                         {
                           name: 'Tyron Pilagan Feraldo'
@@ -510,6 +675,9 @@ const data = reactive({
                 },
                 {
                   name: 'Florencio Budao Pilagan',
+                  details: {
+                    wife: ''
+                  },
                   children: [
                     {
                       name: 'Mark Daniel Tagoda Pilagan'
@@ -531,6 +699,9 @@ const data = reactive({
                 },
                 {
                   name: 'Virgilio Budao Pilagan',
+                  details: {
+                    wife: ''
+                  },
                   children: [
                     {
                       name: 'Vialyn Barrozo Pilagan'
@@ -542,7 +713,10 @@ const data = reactive({
               collapsed: false
             },
             {
-              name: 'Pacita Awigan Pilagan',
+              name: 'Pacita Awigan Pilagan aka "Pasing"',
+              details: {
+                husband: ''
+              },
               children: [
                 {
                   name: 'Jean Pilagan'
@@ -560,13 +734,19 @@ const data = reactive({
               collapsed: false
             },
             {
-              name: 'Avelina Awigan Pilagan - Lumpangi - Arcardo',
+              name: 'Avelina Awigan Pilagan - Lumpangi - Arcardo aka "Belen"',
+              details: {
+                husband: ''
+              },
               children: [
                 {
                   name: 'Emily Pilagan Lumpangi'
                 },
                 {
                   name: 'Dionie Pilagan Lumpangi',
+                  details: {
+                    wife: ''
+                  },
                   children: [
                     {
                       name: 'Spencer Lumpangi'
@@ -579,6 +759,9 @@ const data = reactive({
                 },
                 {
                   name: 'Leo Pilagan Lumpangi',
+                  details: {
+                    wife: ''
+                  },
                   children: [
                     {
                       name: 'Hannah Lumpangi'
@@ -590,10 +773,16 @@ const data = reactive({
                   collapsed: false
                 },
                 {
-                  name: 'Giovanni Pilagan Arcardo'
+                  name: 'Giovanni Pilagan Arcardo',
+                  details: {
+                    wife: ''
+                  }
                 },
                 {
                   name: 'Jay-anne Pilagan Arcardo',
+                  details: {
+                    husband: ''
+                  },
                   children: []
                 }
               ],
@@ -607,9 +796,15 @@ const data = reactive({
     },
     {
       name: 'Alvaro Dukey',
+      details: {
+        wife: ''
+      },
       children: [
         {
           name: 'Alfredo Dukey',
+          details: {
+            wife: ''
+          },
           children: [
             {
               name: 'Ofelia Dukey - Vidal'
@@ -621,10 +816,16 @@ const data = reactive({
           collapsed: false
         },
         {
-          name: 'Arsenio Dukey',
+          name: 'Arsenio Dukey aka "Senio"',
+          details: {
+            wife: ''
+          },
           children: [
             {
               name: 'Jaime Dukey',
+              details: {
+                wife: ''
+              },
               children: [
                 {
                   name: 'Elmer Dukey'
@@ -640,6 +841,9 @@ const data = reactive({
             },
             {
               name: 'Minda Dukey - Benamir',
+              details: {
+                husband: ''
+              },
               children: [
                 {
                   name: 'Michael Dukey Benamir'
@@ -648,13 +852,19 @@ const data = reactive({
                   name: 'Merylyn Dukey Benamir - Castro'
                 },
                 {
-                  name: 'Mirvin Dukey Benamir'
+                  name: 'Mirvin Dukey Benamir',
+                  details: {
+                    wife: ''
+                  }
                 },
                 {
                   name: 'Milyn Dukey Benamir'
                 },
                 {
-                  name: 'Mayeth Dukey Benamir - Belen'
+                  name: 'Mayeth Dukey Benamir - Belen',
+                  details: {
+                    husband: ''
+                  }
                 },
                 {
                   name: 'Menard Dukey Benamir'
@@ -667,6 +877,9 @@ const data = reactive({
             },
             {
               name: 'Veirnessa Dukey - Fabian',
+              details: {
+                husband: ''
+              },
               children: [
                 {
                   name: 'Marisel Dukey Fabian'
@@ -682,6 +895,9 @@ const data = reactive({
             },
             {
               name: 'Lucia Dukey - Rey',
+              details: {
+                husband: ''
+              },
               children: [
                 {
                   name: 'Ranie Dukey - Rey'
@@ -700,6 +916,9 @@ const data = reactive({
             },
             {
               name: 'Mileth Dukey - Gilo',
+              details: {
+                husband: ''
+              },
               children: [
                 {
                   name: 'Rovincent Dukey Gilo'
@@ -721,6 +940,9 @@ const data = reactive({
             },
             {
               name: 'Jun Dukey',
+              details: {
+                wife: ''
+              },
               children: [
                 {
                   name: 'Marivic Dukey'
@@ -745,6 +967,9 @@ const data = reactive({
             },
             {
               name: 'Dante Dukey',
+              details: {
+                wife: ''
+              },
               children: [
                 {
                   name: 'Lyra Dukey'
@@ -754,6 +979,9 @@ const data = reactive({
             },
             {
               name: 'Jumar Dukey',
+              details: {
+                wife: ''
+              },
               children: [
                 {
                   name: 'Ajay Dukey'
@@ -769,6 +997,9 @@ const data = reactive({
         },
         {
           name: 'Ragsak Dukey',
+          details: {
+            wife: 'Maria Dukey'
+          },
           children: [
             {
               name: 'Rag-o Dukey'
@@ -810,10 +1041,16 @@ const data = reactive({
           collapsed: false
         },
         {
-          name: 'Narcisa Dukey - Bang-a'
+          name: 'Narcisa Dukey - Bang-a',
+          details: {
+            husband: ''
+          }
         },
         {
           name: 'Salvador Cortez',
+          details: {
+            wife: ''
+          },
           children: [
             {
               name: '-'
@@ -835,6 +1072,9 @@ const data = reactive({
         },
         {
           name: 'Jovita Dukey - Camide',
+          details: {
+            husband: ''
+          },
           children: [
             {
               name: 'Norma Dukey Camide - Ramirez'
@@ -863,14 +1103,24 @@ const chartOption = computed(() => {
   return {
     tooltip: {
       trigger: 'item',
-      triggerOn: 'mousemove'
+      triggerOn: 'mousemove',
+      formatter: function (params: any) {
+        if (!params.data.details) return ''
+
+        const details = params.data.details
+
+        if (details.hasOwnProperty('wife')) {
+          return `Wife: ${details.wife}`
+        } else if (details.hasOwnProperty('husband')) return `Husband: ${details.husband}`
+        return '-'
+      }
     },
     toolbox: {
       itemSize: 20,
       feature: {
         saveAsImage: {
           type: 'png',
-          name: 'Pilagan-Dukey_family_tree',
+          name: 'Pilagan-Dukey_Genealogy',
           backgroundColor: '#ffffff',
           show: true
         },
@@ -890,8 +1140,9 @@ const chartOption = computed(() => {
         left: '2%',
         bottom: '1%',
         right: '5%',
-        symbol: 'circle',
-        symbolSize: 18,
+        symbolSize: 16,
+        edgeShape: 'polyline',
+        edgeForkPosition: '63%',
         lineStyle: {
           color: '#aaaaaa'
         },
@@ -899,7 +1150,7 @@ const chartOption = computed(() => {
           position: 'left',
           verticalAlign: 'middle',
           align: 'right',
-          fontSize: 18
+          fontSize: 15
         },
         leaves: {
           label: {
@@ -920,6 +1171,7 @@ const chartOption = computed(() => {
 })
 
 onMounted(() => {
+  // const treeChart = echarts.init(document.getElementById('main'), null, { renderer: 'svg' })
   const treeChart = echarts.init(document.getElementById('main'))
 
   // Display the chart using the configuration items and data just specified.
@@ -928,11 +1180,15 @@ onMounted(() => {
   window.addEventListener('resize', function () {
     treeChart.resize()
   })
+
+  setTimeout(() => {
+    document.getElementById('main')?.scrollIntoView({ block: 'center' })
+  }, 700)
 })
 </script>
 
 <template>
   <main>
-    <div id="main" style="width: 400rem; height: 450rem; background: #ffffff"></div>
+    <div id="main" style="width: 400rem; height: 350rem; background: #ffffff"></div>
   </main>
 </template>
