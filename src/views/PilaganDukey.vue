@@ -150,7 +150,7 @@ const data = reactive({
                   },
                   children: [
                     {
-                      name: 'Doracion Pilagan Dauzon - Mata',
+                      name: 'Adoracion Pilagan Dauzon - Mata',
                       details: {
                         husband: ''
                       },
@@ -177,16 +177,16 @@ const data = reactive({
                       collapsed: false
                     },
                     {
-                      name: 'Zenaida Pilagan Dauzon - Bartolome',
+                      name: 'Zenaida Pilagan Dauzon - Canzino',
                       details: {
                         husband: ''
                       },
                       children: [
                         {
-                          name: 'Frema Pilagan Dauzon Bartolome'
+                          name: 'Frema Pilagan Dauzon Canzino'
                         },
                         {
-                          name: 'Lenlen Pilagan Dauzon Bartolome'
+                          name: 'Lenlen Pilagan Dauzon Canzino'
                         }
                       ],
                       collapsed: false
