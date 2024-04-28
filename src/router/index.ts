@@ -5,8 +5,14 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('../views/PilaganDukey.vue')
+      alias: '/pilagan-dukey-clan',
+      name: 'Pilagan Dukey Clan',
+      component: () => import('../views/PilaganDukeyClan.vue')
+    },
+    {
+      path: '/awigan-clan',
+      name: 'Awigan Clan',
+      component: () => import('../views/AwiganClan.vue')
     }
   ]
 })

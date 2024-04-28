@@ -1,0 +1,488 @@
+{
+  "name": "Awigan Clan",
+  "children": [
+    {
+      "name": "Parent",
+      "children": [
+        {
+          "name": "Sofia Awigan - Pilagan aka \"Basil\"",
+          "details": {
+            "husband": "Ignacio Pilagan"
+          },
+          "children": [
+            {
+              "name": "Simplicio Awigan Pilagan aka \"Ensiong\"",
+              "details": {
+                "wife": "Rosita Quila Postin - Pilagan"
+              },
+              "children": [
+                {
+                  "name": "Diego Postin Pilagan"
+                },
+                {
+                  "name": "Peter Postin Pilagan",
+                  "details": {
+                    "wife": "Eliza Arellano Sunio - Pilagan"
+                  },
+                  "children": [
+                    {
+                      "name": "Lister Sunio Pilagan"
+                    },
+                    {
+                      "name": "Steven Sunio Pilagan"
+                    },
+                    {
+                      "name": "Liezel Sunio Pilagan - Barba",
+                      "details": {
+                        "husband": "John Von Barba"
+                      },
+                      "children": [
+                        {
+                          "name": "Zamira Pilagan Barba"
+                        },
+                        {
+                          "name": "VJ Pilagan Barba"
+                        }
+                      ],
+                      "collapsed": false
+                    },
+                    {
+                      "name": "Mcreigert Sunio Pilagan"
+                    }
+                  ],
+                  "collapsed": false
+                },
+                {
+                  "name": "Virgilio Postin Pilagan"
+                },
+                {
+                  "name": "Marilou Postin Pilagan - Bigsot",
+                  "details": {
+                    "husband": "Romeo Bigsot"
+                  },
+                  "children": [
+                    {
+                      "name": "Jerome Pilagan Bigsot"
+                    }
+                  ],
+                  "collapsed": false
+                },
+                {
+                  "name": "Larry Postin Pilagan",
+                  "details": {
+                    "wife": "Corazon Caguay - Pilagan"
+                  },
+                  "children": [
+                    {
+                      "name": "Frankie Caguay Pilagan"
+                    }
+                  ],
+                  "collapsed": false
+                },
+                {
+                  "name": "Amy Postin Pilagan - Jackson",
+                  "details": {
+                    "husband": "Frank Jackson"
+                  }
+                }
+              ],
+              "collapsed": false
+            },
+            {
+              "name": "Espiritu Awigan Pilagan aka \"Espir\"",
+              "details": {
+                "wife": ""
+              },
+              "children": [
+                {
+                  "name": "Eulogio Budao Pilagan Sr.",
+                  "details": {
+                    "wife": ""
+                  },
+                  "children": [
+                    {
+                      "name": "Emily Ruth Batallang Pilagan - Ebeng",
+                      "details": {
+                        "husband": ""
+                      },
+                      "children": [
+                        {
+                          "name": "Krishna Pilagan Ebeng"
+                        },
+                        {
+                          "name": "Tiara Pilagan Ebeng"
+                        },
+                        {
+                          "name": "Kyle Pilagan Ebeng"
+                        }
+                      ],
+                      "collapsed": false
+                    },
+                    {
+                      "name": "Eden Batallang Pilagan - Feraldo",
+                      "details": {
+                        "husband": ""
+                      },
+                      "children": [
+                        {
+                          "name": "Tyron Pilagan Feraldo"
+                        },
+                        {
+                          "name": "Trixie Pilagan Feraldo"
+                        }
+                      ],
+                      "collapsed": false
+                    },
+                    {
+                      "name": "Glenn Mark Batallang Pilagan"
+                    },
+                    {
+                      "name": "Patrick Leo Batallang Pilagan"
+                    },
+                    {
+                      "name": "Eulogio Batallang Pilagan Jr."
+                    }
+                  ],
+                  "collapsed": false
+                },
+                {
+                  "name": "Florencio Budao Pilagan",
+                  "details": {
+                    "wife": ""
+                  },
+                  "children": [
+                    {
+                      "name": "Mark Daniel Tagoda Pilagan"
+                    },
+                    {
+                      "name": "Krissah Tagoda Pilagan"
+                    },
+                    {
+                      "name": "Jay-Anne Tagoda Pilagan"
+                    },
+                    {
+                      "name": "Ezzer Tagoda Pilagan"
+                    },
+                    {
+                      "name": "Alexon Tagoda Pilagan"
+                    }
+                  ],
+                  "collapsed": false
+                },
+                {
+                  "name": "Virgilio Budao Pilagan",
+                  "details": {
+                    "wife": ""
+                  },
+                  "children": [
+                    {
+                      "name": "Vialyn Barrozo Pilagan"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              ],
+              "collapsed": false
+            },
+            {
+              "name": "Pacita Awigan Pilagan aka \"Pasing\"",
+              "details": {
+                "husband": ""
+              },
+              "children": [
+                {
+                  "name": "Jean Pilagan"
+                },
+                {
+                  "name": "Josie Pilagan"
+                },
+                {
+                  "name": "Meldy Pilagan"
+                },
+                {
+                  "name": "Sabbeth Pilagan"
+                }
+              ],
+              "collapsed": false
+            },
+            {
+              "name": "Avelina Awigan Pilagan - Lumpangi - Arcardo aka \"Belen\"",
+              "details": {
+                "husband": ""
+              },
+              "children": [
+                {
+                  "name": "Emily Pilagan Lumpangi"
+                },
+                {
+                  "name": "Dionie Pilagan Lumpangi",
+                  "details": {
+                    "wife": ""
+                  },
+                  "children": [
+                    {
+                      "name": "Spencer Lumpangi"
+                    },
+                    {
+                      "name": "Rio Lumpangi"
+                    }
+                  ],
+                  "collapsed": false
+                },
+                {
+                  "name": "Leo Pilagan Lumpangi",
+                  "details": {
+                    "wife": ""
+                  },
+                  "children": [
+                    {
+                      "name": "Hannah Lumpangi"
+                    },
+                    {
+                      "name": "Harvelio Lumpangi"
+                    }
+                  ],
+                  "collapsed": false
+                },
+                {
+                  "name": "Giovanni Pilagan Arcardo",
+                  "details": {
+                    "wife": ""
+                  }
+                },
+                {
+                  "name": "Jay-anne Pilagan Arcardo",
+                  "details": {
+                    "husband": ""
+                  },
+                  "children": []
+                }
+              ],
+              "collapsed": false
+            }
+          ],
+          "collapsed": false
+        }
+      ],
+      "collapsed": false
+    },
+    {
+      "name": "Parent",
+      "children": [
+        {
+          "name": "Angela Awigan - Francia",
+          "details": {
+            "husband": ""
+          },
+          "children": [
+            {
+              "name": "Florencio Awigan Francia",
+              "details": {
+                "wife": ""
+              },
+              "children": [
+                {
+                  "name": "Ceasar Francia"
+                },
+                {
+                  "name": "Amore Francia"
+                },
+                {
+                  "name": "Flor Francia"
+                }
+              ],
+              "collapsed": false
+            },
+            {
+              "name": "Honesto Awigan Francia",
+              "details": {
+                "wife": ""
+              },
+              "children": [
+                {
+                  "name": "Lanie Francia"
+                }
+              ],
+              "collapsed": false
+            },
+            {
+              "name": "Felesecimo Awigan Francia Sr.",
+              "details": {
+                "wife": ""
+              },
+              "children": [
+                {
+                  "name": "Felecesimo Francia Jr."
+                },
+                {
+                  "name": "Junior Francia"
+                },
+                {
+                  "name": "Fred Francia"
+                },
+                {
+                  "name": "Ask Auntie Violy"
+                }
+              ],
+              "collapsed": false
+            },
+            {
+              "name": "Lucrecia Awigan Francia - Salting",
+              "details": {
+                "husband": ""
+              },
+              "children": [],
+              "collapsed": false
+            },
+            {
+              "name": "Tina Awigan Francia",
+              "children": [],
+              "collapsed": false
+            }
+          ],
+          "collapsed": false
+        }
+      ],
+      "collapsed": false
+    },
+    {
+      "name": "Parent",
+      "children": [
+        {
+          "name": "Thomas Awigan aka \"Tomas\"",
+          "details": {
+            "wife": ""
+          },
+          "children": [
+            {
+              "name": "Avelina Awigan - Garalde",
+              "details": {
+                "husband": ""
+              },
+              "children": [
+                {
+                  "name": "Benjo Awigan Garalde"
+                },
+                {
+                  "name": "Jovelyn Awigan Garalde"
+                },
+                {
+                  "name": "Gerald Awigan Garalde"
+                }
+              ],
+              "collapsed": false
+            },
+            {
+              "name": "Adela Awigan - Paquingan",
+              "details": {
+                "husband": ""
+              },
+              "children": [
+                {
+                  "name": "Aileen Awigan Paquingan"
+                },
+                {
+                  "name": "Gie-gie Awigan Paquingan"
+                }
+              ],
+              "collapsed": false
+            },
+            {
+              "name": " Herminia Awigan - Montes",
+              "details": {
+                "husband": ""
+              },
+              "children": [
+                {
+                  "name": "Ruth Awigan Montes"
+                },
+                {
+                  "name": "Anton Awigan Montes"
+                }
+              ],
+              "collapsed": false
+            },
+            {
+              "name": "Armando Awigan",
+              "details": {
+                "wife": ""
+              },
+              "children": [
+                {
+                  "name": "John Awigan"
+                },
+                {
+                  "name": "Angela Awigan"
+                },
+                {
+                  "name": "Raymond Awigan"
+                }
+              ],
+              "collapsed": false
+            },
+            {
+              "name": "Federico Awigan"
+            },
+            {
+              "name": "Roger Awigan",
+              "details": {
+                "wife": ""
+              },
+              "children": [
+                {
+                  "name": "-"
+                },
+                {
+                  "name": "-"
+                }
+              ],
+              "collapsed": false
+            },
+            {
+              "name": "Patricia Awigan - Canon",
+              "details": {
+                "husband": ""
+              },
+              "children": [
+                {
+                  "name": "Patrick Awigan Canon"
+                }
+              ],
+              "collapsed": false
+            }
+          ],
+          "collapsed": false
+        },
+        {
+          "name": "Arcadia Awigan - Basingil",
+          "details": {
+            "husband": ""
+          },
+          "children": [
+            {
+              "name": "Rebecca Awigan - Basingil"
+            },
+            {
+              "name": "Caria Awigan - Valdez",
+              "details": {
+                "husband": ""
+              },
+              "children": [
+                {
+                  "name": "Joseph Simon Valdez"
+                },
+                {
+                  "name": "Keneth Valdez"
+                }
+              ],
+              "collapsed": false
+            }
+          ],
+          "collapsed": false
+        }
+      ],
+      "collapsed": false
+    }
+  ],
+  "collapsed": false
+}
