@@ -54,25 +54,31 @@ const data = reactive({
                       },
                       children: [
                         {
-                          name: 'Reyn Pilagan Maog Ngayaan',
+                          name: 'June Rondel Pilagan Maog Ngayaan',
                           details: {
                             wife: 'Dara Caguay Paetan - Ngayaan'
                           },
                           children: [
                             {
-                              name: '-'
+                              name: 'Louise Amethyst Pilagan Maog Paetan Ngayaan'
                             },
                             {
-                              name: '-'
+                              name: 'Jude Mar Pilagan Maog Paetan Ngayaan'
                             }
                           ],
                           collapsed: false
                         },
                         {
-                          name: '-'
+                          name: 'June Leonel Pilagan Maog Ngayaan'
                         },
                         {
                           name: 'Fidel Pilagan Maog Ngayaan Jr.'
+                        },
+                        {
+                          name: 'Geofed Jhon Pilagan Maog Ngayaan'
+                        },
+                        {
+                          name: 'Jerico Pilagan Maog Ngayaan'
                         }
                       ],
                       collapsed: false
@@ -231,11 +237,11 @@ const data = reactive({
                 {
                   name: 'Arthur Baclayen Pilagan',
                   details: {
-                    wife: ''
+                    wife: 'Valentina (Tina) Galangey Pattang - Pilagan'
                   },
                   children: [
                     {
-                      name: 'Arlene Pilagan'
+                      name: 'Arlene Pilagan - Oquingan'
                     },
                     {
                       name: 'Melanie Pilagan - Ballester',
@@ -244,13 +250,13 @@ const data = reactive({
                       }
                     },
                     {
-                      name: 'Mary Anne Pilagan - Bung-e',
+                      name: 'Mary Anne Pilagan - Paslao',
                       details: {
                         husband: ''
                       }
                     },
                     {
-                      name: 'Maricel Pilagan'
+                      name: 'Arteshell Pilagan Dadnga-a'
                     }
                   ],
                   collapsed: false
@@ -1111,9 +1117,10 @@ const chartOption = computed(() => {
 
         const details = params.data.details
 
-        if (details.hasOwnProperty('wife')) {
+        if (Object.prototype.hasOwnProperty.call(details, 'wife')) {
           return `Wife: ${details.wife}`
-        } else if (details.hasOwnProperty('husband')) return `Husband: ${details.husband}`
+        } else if (Object.prototype.hasOwnProperty.call(details, 'husband'))
+          return `Husband: ${details.husband}`
         return '-'
       }
     },
@@ -1122,6 +1129,7 @@ const chartOption = computed(() => {
       feature: {
         saveAsImage: {
           type: 'png',
+          // type: 'svg',
           name: 'Pilagan-Dukey_Genealogy',
           backgroundColor: '#ffffff',
           show: true
@@ -1152,7 +1160,8 @@ const chartOption = computed(() => {
           position: 'left',
           verticalAlign: 'middle',
           align: 'right',
-          fontSize: 15
+          fontSize: 22,
+          fontWeight: '600'
         },
         leaves: {
           label: {
@@ -1184,7 +1193,13 @@ onMounted(() => {
   })
 
   setTimeout(() => {
-    document.getElementById('main')?.scrollIntoView({ block: 'center' })
+    const main = document.getElementById('main')
+    main?.scrollIntoView({ block: 'center' })
+
+    window.scrollTo({
+      top: main?.scrollHeight / 3.25,
+      left: main?.scrollWidth / 2
+    })
   }, 700)
 })
 </script>
@@ -1192,17 +1207,21 @@ onMounted(() => {
 <template>
   <main>
     <a :href="imgUrl" target="_blank" class="link">View as image</a>
-    <div id="main" style="width: 400rem; height: 350rem; background: #ffffff"></div>
+    <div id="main" style="width: 700rem; height: 500rem; background: #ffffff"></div>
   </main>
 </template>
 
 <style scoped>
 .link {
-  position: absolute;
+  position: fixed;
   left: 2rem;
   top: 1rem;
+  padding: 12px;
+  border-radius: 5px;
   z-index: 999;
+  font-size: 20px;
   font-weight: 500;
+  background-color: #7eec8f;
   color: #000;
 }
 </style>
