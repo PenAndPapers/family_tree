@@ -3,7 +3,7 @@ import { onMounted } from 'vue'
 import { useInitChart } from '../composable/useChartOption'
 import data from '../data/AwiganClan.json'
 
-const imgUrl = new URL('../assets/Awigan_Genealogy.png', import.meta.url).href
+const imgUrl = new URL('../assets/images/Awigan_Genealogy.png', import.meta.url).href
 
 const { initChart } = useInitChart(data, 'Awigan_Genealogy')
 
