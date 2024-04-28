@@ -1137,6 +1137,9 @@ const chartOption = computed(() => {
         dataZoom: {
           show: true
         },
+        dataView: {
+          show: true
+        },
         restore: {
           show: true
         }
@@ -1150,7 +1153,7 @@ const chartOption = computed(() => {
         left: '2%',
         bottom: '1%',
         right: '5%',
-        symbolSize: 16,
+        symbolSize: 18,
         edgeShape: 'polyline',
         edgeForkPosition: '63%',
         lineStyle: {
@@ -1160,7 +1163,7 @@ const chartOption = computed(() => {
           position: 'left',
           verticalAlign: 'middle',
           align: 'right',
-          fontSize: 22,
+          fontSize: 25,
           fontWeight: '600'
         },
         leaves: {
@@ -1174,8 +1177,8 @@ const chartOption = computed(() => {
           focus: 'descendant'
         },
         expandAndCollapse: true,
-        animationDuration: 550,
-        animationDurationUpdate: 750
+        animationDuration: 200,
+        animationDurationUpdate: 200
       }
     ]
   }
@@ -1200,7 +1203,7 @@ onMounted(() => {
     const scrollWidth = main?.scrollWidth as number
 
     window.scrollTo({
-      top: scrollHeight / 3.25,
+      top: scrollHeight / 0,
       left: scrollWidth / 2
     })
   }, 700)
@@ -1210,19 +1213,19 @@ onMounted(() => {
 <template>
   <main>
     <a :href="imgUrl" target="_blank" class="link">View as image</a>
-    <div id="main" style="width: 700rem; height: 500rem; background: #ffffff"></div>
+    <div id="main" style="width: 800rem; height: 500rem; background: #ffffff"></div>
   </main>
 </template>
 
 <style scoped>
 .link {
   position: fixed;
-  left: 2rem;
+  left: 1rem;
   top: 1rem;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   z-index: 999;
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 600;
   background-color: #7eec8f;
   color: #000;
