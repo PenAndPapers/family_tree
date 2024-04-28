@@ -1196,9 +1196,12 @@ onMounted(() => {
     const main = document.getElementById('main')
     main?.scrollIntoView({ block: 'center' })
 
+    const scrollHeight = main?.scrollHeight as number
+    const scrollWidth = main?.scrollWidth as number
+
     window.scrollTo({
-      top: main?.scrollHeight / 3.25,
-      left: main?.scrollWidth / 2
+      top: scrollHeight / 3.25,
+      left: scrollWidth / 2
     })
   }, 700)
 })
@@ -1216,11 +1219,11 @@ onMounted(() => {
   position: fixed;
   left: 2rem;
   top: 1rem;
-  padding: 12px;
+  padding: 1rem;
   border-radius: 5px;
   z-index: 999;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 600;
   background-color: #7eec8f;
   color: #000;
 }
