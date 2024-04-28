@@ -1,9 +1,7 @@
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 import * as echarts from 'echarts'
 
-export function useInitChart(data: Object, imgName: string, imgPath: string) {
-  const imgUrl = ref(new URL(imgPath, import.meta.url).href)
-
+export function useInitChart(data: Object, imgName: string) {
   const chartOption = computed(() => {
     return {
       tooltip: {
@@ -108,7 +106,6 @@ export function useInitChart(data: Object, imgName: string, imgPath: string) {
   return {
     chartOption,
     autoScroll,
-    initChart,
-    imgUrl
+    initChart
   }
 }
