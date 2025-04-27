@@ -19,11 +19,20 @@
         padding: 0;
         height: 100%;
         width: 100%;
+        overflow: auto;
       }
 
       #container {
         height: 200rem;
         width: 300rem;
+        overflow: auto !important;
+        -webkit-overflow-scrolling: touch;
+        position: relative;
+      }
+
+      .highcharts-container {
+        overflow: visible !important;
+        touch-action: pan-x pan-y pinch-zoom !important;
       }
     </style>
   </head>
@@ -905,6 +914,10 @@
           inverted: false,
           spacingBottom: 30,
           marginRight: 600,
+          scrollablePlotArea: {
+            minWidth: 4800,
+            scrollPositionX: 1
+          }
         },
         title: {
           text: 'Dukey-Pilagan Family Tree',
