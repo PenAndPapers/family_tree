@@ -970,10 +970,10 @@
               setTimeout(() => {
                 const title = document.getElementsByClassName('highcharts-title')[0]
                 if (title) {
-                  window.scrollTo({
-                    top: title.offsetTop - 50,
-                    left: window.innerWidth / 2,
-                    behavior: 'instant'
+                  title.scrollIntoView({ 
+                    behavior: 'instant',
+                    inline: 'center',
+                    block: 'center'
                   })
                 }
               }, 50)
