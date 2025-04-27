@@ -17,14 +17,13 @@
       html, body {
         margin: 0;
         padding: 0;
-        overflow: auto;
+        height: 100%;
+        width: 100%;
       }
 
       #container {
-        height: 250rem;
-        width: 200rem;
-        overflow: auto;
-        position: relative;
+        height: 200rem;
+        width: 300rem;
       }
     </style>
   </head>
@@ -860,7 +859,6 @@
          * each items in branch add properties
          * - id - the parent object ID as suffix
          * - parent - the parent object ID
-         * @param {Array} data - the array of objects
          */
         const newData = data.map((item) => {
           let counter = 1
@@ -907,12 +905,6 @@
           inverted: false,
           spacingBottom: 30,
           marginRight: 600,
-          panning: {
-            enabled: true,
-            type: 'xy'
-          },
-          pinchType: 'xy',
-          zoomType: 'xy'
         },
         title: {
           text: 'Dukey-Pilagan Family Tree',
@@ -984,7 +976,7 @@
       })
 
       setTimeout(() => {
-        // scroll to left 50% of page
+        // scroll atleast 50% to the left of page
         window.scrollTo(window.innerWidth / 0.65, 0)
       }, 500)
     </script>
