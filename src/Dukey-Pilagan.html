@@ -10,20 +10,11 @@
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <style>
       * {
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            "Segoe UI",
-            Roboto,
-            Helvetica,
-            Arial,
-            "Apple Color Emoji",
-            "Segoe UI Emoji",
-            "Segoe UI Symbol",
-            sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          box-sizing: border-box;
       }
 
-      body {
+      html, body {
         margin: 0;
         padding: 0;
         width: 100%;
@@ -35,17 +26,14 @@
       #container {
         height: 250rem;
         width: 200rem;
-        touch-action: pan-x pan-y pinch-zoom;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        position: relative;
       }
 
-      .highcharts-figure {
-        margin: 0 auto;
-        max-width: 900px;
-        min-width: 360px;
-      }
-
-      .highcharts-description {
-        margin: 0.3rem 10px;
+      .highcharts-container {
+        touch-action: manipulation;
+        -ms-touch-action: manipulation;
       }
     </style>
   </head>
@@ -877,9 +865,12 @@
       ]
 
       const flattenedData = function () {
-        // each items in branch add properties
-        // - id - the parent object ID as suffix
-        // - parent - the parent object ID
+        /**
+         * each items in branch add properties
+         * - id - the parent object ID as suffix
+         * - parent - the parent object ID
+         * @param {Array} data - the array of objects
+         */
         const newData = data.map((item) => {
           let counter = 1
           const result = []
@@ -888,24 +879,22 @@
             // Create node with all existing properties
             const node = { ...item }
 
-            // Update/add id and parent
+            /**
+             * update/add id and parent
+             * Remove branches property as it's not needed in flattened structure
+             */
             node.id = item.id || `node${counter++}`
-            if (parentId) {
-              node.parent = parentId
-            }
-
-            // Remove branches property as it's not needed in flattened structure
             delete node.branches
+            if (parentId) node.parent = parentId
 
             result.push(node)
 
-            // reverse the order of branches
+            /**
+             * reverse the order of branches
+             * Process branches recursively
+             */
             if (item.branches) {
-              item.branches.reverse()
-            }
-            // Process branches recursively
-            if (item.branches) {
-              item.branches.forEach((branch) => {
+              item.branches.reverse().forEach((branch) => {
                 processBranches(branch, node.id)
               })
             }
@@ -926,7 +915,13 @@
         chart: {
           inverted: false,
           spacingBottom: 30,
-          marginRight: 600
+          marginRight: 600,
+          panning: {
+            enabled: true,
+            type: 'xy'
+          },
+          pinchType: 'xy',
+          zoomType: 'xy'
         },
         title: {
           text: 'Dukey-Pilagan Family Tree',
