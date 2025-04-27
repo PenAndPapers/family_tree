@@ -8,11 +8,33 @@
     <script src="https://code.highcharts.com/modules/treegraph.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <style>
+      * {
+          font-family:
+              -apple-system,
+              BlinkMacSystemFont,
+              "Segoe UI",
+              Roboto,
+              Helvetica,
+              Arial,
+              "Apple Color Emoji",
+              "Segoe UI Emoji",
+              "Segoe UI Symbol",
+              sans-serif;
+      }
+
+      .highcharts-figure {
+          margin: 0 auto;
+          max-width: 900px;
+          min-width: 360px;
+      }
+
       #container {
-        height: auto;
-        min-height: 400rem;
-        min-width: 400rem;
-        padding: 20px 0;
+          min-height: 550rem;
+          min-width: 400rem;
+      }
+
+      .highcharts-description {
+          margin: 0.3rem 10px;
       }
     </style>
   </head>
@@ -50,7 +72,7 @@
                               name: 'Fidel Pilagan Ngayaan <br> <span style="color: green;">Wife</span>: Gina Maog',
                               branches: [
                                 {
-                                  name: 'June Rondel Pilagan Maog Ngayaan <br> <span style="color: green;">Wife</span>: Dara Caguay Paetan - Ngayaan',
+                                  name: 'June Rondel Pilagan Maog Ngayaan <br> <span style="color: green;">Wife</span>: Dara Paetan - Ngayaan',
                                   branches: [
                                     {
                                       name: 'Louise Amethyst (Pilagan) Ngayaan'
@@ -844,7 +866,6 @@
       ]
 
       const flattenedData = function () {
-        // TODO
         // each items in branch add properties
         // - id - the parent object ID as suffix
         // - parent - the parent object ID
@@ -894,10 +915,14 @@
         chart: {
           inverted: false,
           spacingBottom: 30,
-          marginRight: 520
+          marginRight: 600
         },
         title: {
-          text: 'Dukey-Pilagan Family Tree'
+          text: 'Dukey-Pilagan Family Tree',
+          style: {
+            fontSize: '3.5rem',
+            fontWeight: 'bold'
+          }
         },
         series: [
           {
@@ -905,9 +930,13 @@
             data: flattenedData(),
             marker: {
               symbol: 'circle',
-              radius: 6,
+              radius: 7,
               fillColor: '#ffffff',
               lineWidth: 3
+            },
+            link: {
+              lineWidth: 2,
+              color: '#333'
             },
             dataLabels: {
               align: 'left',
@@ -918,7 +947,7 @@
                 paddingLeft: 15,
                 paddingRight: 15,
                 whiteSpace: 'nowrap',
-                fontSize: '16px'
+                fontSize: '18px'
               },
               x: 24,
               crop: false,
@@ -942,32 +971,25 @@
               },
               {
                 level: 4,
-                colorByPoint: false,
-                colorVariation: {
-                  key: 'brightness',
-                  to: -0.5
-                }
+                colorByPoint: true
               },
               {
                 level: 5,
-                colorByPoint: false,
-                colorVariation: {
-                  key: 'brightness',
-                  to: -0.5
-                }
+                colorByPoint: true
               },
               {
                 level: 6,
-                colorByPoint: false,
-                colorVariation: {
-                  key: 'brightness',
-                  to: -0.5
-                }
+                colorByPoint: false
               }
             ]
           }
         ]
       })
+
+      setTimeout(() => {
+        // scroll to left 50% of page
+        window.scrollTo(window.innerWidth / 0.65, 0)
+      }, 500)
     </script>
   </body>
 </html>
