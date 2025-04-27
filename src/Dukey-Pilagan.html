@@ -16,12 +16,12 @@
 
       html, body {
         margin: 0;
-        padding: 0;
+        padding: 1rem;
       }
 
       #container {
         height: 500rem;
-        width: 500rem;
+        width: 300rem;
         -webkit-overflow-scrolling: touch;
         position: relative;
       }
@@ -29,6 +29,16 @@
       .highcharts-container {
         overflow: visible !important;
         touch-action: pan-x pan-y pinch-zoom !important;
+      }
+
+      tspan.husband {
+        fill: red;
+        color: red;
+      }
+
+      tspan.wife {
+        fill: green;
+        color: green;
       }
     </style>
   </head>
@@ -45,28 +55,28 @@
               name: 'Ignacio Pilagan',
               branches: [
                 {
-                  name: '<span style="color: green;">First wife</span>: <br> Sabadia Pilagan',
+                  name: '<span class="wife">First wife</span>: <br> Sabadia Pilagan',
                   branches: [
                     {
-                      name: 'Marcus Pilagan <br> <span style="color: green;">Wife</span>: -',
+                      name: 'Marcus Pilagan <br> <span class="wife">Wife</span>: -',
                       branches: [
                         {
-                          name: 'Nenita Pilagan - Ngayaan <br> <span style="color: red;">Husband</span>: Sidoro Ngayaan',
+                          name: 'Nenita Pilagan - Ngayaan <br> <span class="husband">Husband</span>: Sidoro Ngayaan',
                           branches: [
                             {
-                              name: 'Agnes Pilagan Ngayaan - Salbino <br> <span style="color: red;">Husband</span>: Romualdo Salbino'
+                              name: 'Agnes Pilagan Ngayaan - Salbino <br> <span class="husband">Husband</span>: Romualdo Salbino'
                             },
                             {
-                              name: 'Leticia Pilagan Ngayaan - Portem <br> <span style="color: red;">Husband</span>: Nolito Portem'
+                              name: 'Leticia Pilagan Ngayaan - Portem <br> <span class="husband">Husband</span>: Nolito Portem'
                             },
                             {
-                              name: 'Juanito Pilagan Ngayaan <br> <span style="color: green;">Wife</span>: Norma Dang-alan'
+                              name: 'Juanito Pilagan Ngayaan <br> <span class="wife">Wife</span>: Norma Dang-alan'
                             },
                             {
-                              name: 'Fidel Pilagan Ngayaan <br> <span style="color: green;">Wife</span>: Gina Maog',
+                              name: 'Fidel Pilagan Ngayaan <br> <span class="wife">Wife</span>: Gina Maog',
                               branches: [
                                 {
-                                  name: 'June Rondel Pilagan Maog Ngayaan <br> <span style="color: green;">Wife</span>: Dara Paetan - Ngayaan',
+                                  name: 'June Rondel Pilagan Maog Ngayaan <br> <span class="wife">Wife</span>: Dara Paetan - Ngayaan',
                                   branches: [
                                     {
                                       name: 'Louise Amethyst (Pilagan) Ngayaan'
@@ -93,14 +103,14 @@
                           ]
                         },
                         {
-                          name: 'Puring Pilagan - Polides <br> <span style="color: red;">Husband</span>: -',
+                          name: 'Puring Pilagan - Polides <br> <span class="husband">Husband</span>: -',
                           branches: [
                             {
-                              name: 'Dominga Pilagan Polides - Pastrana <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Dominga Pilagan Polides - Pastrana <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
-                              name: 'Jovy Pilagan Polides - Ciriaco <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Jovy Pilagan Polides - Ciriaco <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
@@ -113,11 +123,11 @@
                               name: 'Anaya Pilagan Polides'
                             },
                             {
-                              name: 'Alma Pilagan Polides - Soliman <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Alma Pilagan Polides - Soliman <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
-                              name: 'Ermie Pilagan Polides - Aciong <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Ermie Pilagan Polides - Aciong <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
@@ -126,7 +136,7 @@
                           ]
                         },
                         {
-                          name: 'Enrique Pilagan <br> <span style="color: green;">Wife</span>: -',
+                          name: 'Enrique Pilagan <br> <span class="wife">Wife</span>: -',
                           branches: [
                             {
                               name: 'Joel Pilagan'
@@ -143,13 +153,13 @@
                       ]
                     },
                     {
-                      name: 'Eleuterio Pilagan (Terio) <br> <span style="color: green;">Wife</span>: -',
+                      name: 'Eleuterio Pilagan (Terio) <br> <span class="wife">Wife</span>: -',
                       branches: [
                         {
-                          name: 'Aida Pilagan - Dauzon <br> <span style="color: red;">Husband</span>: -',
+                          name: 'Aida Pilagan - Dauzon <br> <span class="husband">Husband</span>: -',
                           branches: [
                             {
-                              name: 'Adoracion Pilagan Dauzon - Mata <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Adoracion Pilagan Dauzon - Mata <br> <span class="husband">Husband</span>: -',
                               branches: [
                                 {
                                   name: 'Mark Anthony Pilagan Dauzon Mata'
@@ -172,7 +182,7 @@
                               ]
                             },
                             {
-                              name: 'Zenaida Pilagan Dauzon - Canzino <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Zenaida Pilagan Dauzon - Canzino <br> <span class="husband">Husband</span>: -',
                               branches: [
                                 {
                                   name: 'Frema Pilagan Dauzon Canzino'
@@ -186,11 +196,11 @@
                               name: 'Dominador Pilagan Dauzon Jr.'
                             },
                             {
-                              name: 'Marites Pilagan Dauzon - Roque <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Marites Pilagan Dauzon - Roque <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
-                              name: 'Irene Pilagan Dauzon - Luis <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Irene Pilagan Dauzon - Luis <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
@@ -200,42 +210,42 @@
                               name: 'Lisa Pilagan Dauzon'
                             },
                             {
-                              name: 'Joe Pilagan Dauzon <br> <span style="color: green;">Wife</span>: -',
+                              name: 'Joe Pilagan Dauzon <br> <span class="wife">Wife</span>: -',
                               branches: []
                             },
                             {
-                              name: 'Fibe Pilagan Dauzon - Wanagen <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Fibe Pilagan Dauzon - Wanagen <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
-                              name: 'Daisy Pilagan Dauzon - Tamayo <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Daisy Pilagan Dauzon - Tamayo <br> <span class="husband">Husband</span>: -',
                               branches: []
                             }
                           ]
                         },
                         {
-                          name: 'Arthur Baclayen Pilagan <br> <span style="color: green;">Wife</span>: Valentina (Tina) Galangey Pattang',
+                          name: 'Arthur Baclayen Pilagan <br> <span class="wife">Wife</span>: Valentina (Tina) Galangey Pattang',
                           branches: [
                             {
-                              name: 'Arlene Pilagan - Oquingan <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Arlene Pilagan - Oquingan <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
-                              name: 'Melanie Pilagan - Ballester <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Melanie Pilagan - Ballester <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
-                              name: 'Mary Anne Pilagan - Paslao <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Mary Anne Pilagan - Paslao <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
-                              name: 'Arteshell Pilagan Dadnga-a <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Arteshell Pilagan Dadnga-a <br> <span class="husband">Husband</span>: -',
                               branches: []
                             }
                           ]
                         },
                         {
-                          name: 'Domingo Pilagan Sr. <br> <span style="color: green;">Wife</span>: -',
+                          name: 'Domingo Pilagan Sr. <br> <span class="wife">Wife</span>: -',
                           branches: [
                             {
                               name: 'Delia Pilagan'
@@ -253,7 +263,7 @@
                               name: 'Maricel Pilagan'
                             },
                             {
-                              name: 'Catherine Pilagan - Bal-iyang <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Catherine Pilagan - Bal-iyang <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
@@ -262,17 +272,17 @@
                           ]
                         },
                         {
-                          name: 'Donato Pilagan Sr. <br> <span style="color: green;">Wife</span>: -',
+                          name: 'Donato Pilagan Sr. <br> <span class="wife">Wife</span>: -',
                           branches: [
                             {
-                              name: 'Michele Pilagan - Day-a <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Michele Pilagan - Day-a <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
                               name: 'Jayson Pilagan'
                             },
                             {
-                              name: 'Raquel Pilagan - Malaggan <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Raquel Pilagan - Malaggan <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
@@ -280,11 +290,11 @@
                               branches: []
                             },
                             {
-                              name: 'Monette Pilagan - Ledummeng <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Monette Pilagan - Ledummeng <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
-                              name: 'Jenny Pilagan - Tingey <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Jenny Pilagan - Tingey <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
@@ -308,24 +318,24 @@
                           name: 'Crecensia Pilagan - Ubuan',
                           branches: [
                             {
-                              name: 'Maribeth Pilagan Ubuan - Resureccion <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Maribeth Pilagan Ubuan - Resureccion <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
                               name: 'Aris Pilagan Ubuan'
                             },
                             {
-                              name: 'Janeth Pilagan Ubuan - Daus <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Janeth Pilagan Ubuan - Daus <br> <span class="husband">Husband</span>: -',
                               branches: []
                             },
                             {
-                              name: 'Aiza Pilagan Ubuan - Compra <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Aiza Pilagan Ubuan - Compra <br> <span class="husband">Husband</span>: -',
                               branches: []
                             }
                           ]
                         },
                         {
-                          name: 'Lelia Pilagan - Smith <br> <span style="color: red;">Husband</span>: -',
+                          name: 'Lelia Pilagan - Smith <br> <span class="husband">Husband</span>: -',
                           branches: [
                             {
                               name: 'Cristopher Pilagan Smith'
@@ -333,7 +343,7 @@
                           ]
                         },
                         {
-                          name: 'Julio Pilagan <br> <span style="color: green;">Wife</span>: -',
+                          name: 'Julio Pilagan <br> <span class="wife">Wife</span>: -',
                           branches: [
                             {
                               name: 'John Michael Pilagan'
@@ -353,7 +363,7 @@
                           ]
                         },
                         {
-                          name: 'Marieta Pilagan - Liwan <br> <span style="color: red;">Husband</span>: -',
+                          name: 'Marieta Pilagan - Liwan <br> <span class="husband">Husband</span>: -',
                           branches: [
                             {
                               name: 'Gilbert Pilagan Liwan'
@@ -373,7 +383,7 @@
                           name: 'Alfredo Pilagan',
                           branches: [
                             {
-                              name: 'Alex Pilagan - Acosta <br> <span style="color: red;">Husband</span>: -'
+                              name: 'Alex Pilagan - Acosta <br> <span class="husband">Husband</span>: -'
                             },
                             {
                               name: 'Arnel Pilagan'
@@ -387,13 +397,13 @@
                           ]
                         },
                         {
-                          name: 'Margareta Pilagan - Comiles <br> <span style="color: red;">Husband</span>: -',
+                          name: 'Margareta Pilagan - Comiles <br> <span class="husband">Husband</span>: -',
                           branches: [
                             {
                               name: 'Leneth Pilagan Comiles'
                             },
                             {
-                              name: 'Keiry Pilagan Comiles - Pacio <br> <span style="color: red;">Husband</span>: Jessie Pacio'
+                              name: 'Keiry Pilagan Comiles - Pacio <br> <span class="husband">Husband</span>: Jessie Pacio'
                             },
                             {
                               name: 'Ryan Pilagan Comiles'
@@ -412,10 +422,10 @@
                       ]
                     },
                     {
-                      name: 'Magdalena Pilagan - Pislaan <br> <span style="color: red;">Husband</span>: -',
+                      name: 'Magdalena Pilagan - Pislaan <br> <span class="husband">Husband</span>: -',
                       branches: [
                         {
-                          name: 'Josephina Pilagan Pislaan - Apalet <br> <span style="color: red;">Husband</span>: Cepherino Apalet',
+                          name: 'Josephina Pilagan Pislaan - Apalet <br> <span class="husband">Husband</span>: Cepherino Apalet',
                           branches: [
                             {
                               name: 'Henry Pilagan Pislaan Apalet'
@@ -454,14 +464,14 @@
                   ]
                 },
                 {
-                  name: '<span style="color: green;">Second wife</span>: <br> Sofia Awigan Pilagan (Basil)',
+                  name: '<span class="wife">Second wife</span>: <br> Sofia Awigan Pilagan (Basil)',
                   branches: [
                     {
-                      name: 'Simplicio Pilagan (Ensiong) <br> <span style="color: green;">Wife</span>: Rosita Postin Pilagan (Rosing)',
+                      name: 'Simplicio Pilagan (Ensiong) <br> <span class="wife">Wife</span>: Rosita Postin Pilagan (Rosing)',
                       branches: [
                         { name: 'Diego Postin Pilagan' },
                         {
-                          name: 'Peter Postin Pilagan <br> <span style="color: green;">Wife</span>: Eliza Arellano Sunio',
+                          name: 'Peter Postin Pilagan <br> <span class="wife">Wife</span>: Eliza Arellano Sunio',
                           branches: [
                             {
                               name: 'Lister Sunio Pilagan'
@@ -470,7 +480,7 @@
                               name: 'Steven Sunio Pilagan'
                             },
                             {
-                              name: 'Liezel Sunio Pilagan - Barba <br> <span style="color: red;">Husband</span>: John Von Barba',
+                              name: 'Liezel Sunio Pilagan - Barba <br> <span class="husband">Husband</span>: John Von Barba',
                               branches: [
                                 {
                                   name: 'Zamira Pilagan Barba'
@@ -487,7 +497,7 @@
                         },
                         { name: 'Virgilio Postin Pilagan' },
                         {
-                          name: 'Marilou Postin Pilagan - Bigsot <br> <span style="color: red;">Husband</span>: Romeo Bigsot',
+                          name: 'Marilou Postin Pilagan - Bigsot <br> <span class="husband">Husband</span>: Romeo Bigsot',
                           branches: [
                             {
                               name: 'Jerome Pilagan Bigsot'
@@ -495,7 +505,7 @@
                           ]
                         },
                         {
-                          name: 'Larry Postin Pilagan <br> <span style="color: green;">Wife</span>: Corazon Caguay',
+                          name: 'Larry Postin Pilagan <br> <span class="wife">Wife</span>: Corazon Caguay',
                           branches: [
                             {
                               name: 'Frankie Caguay Pilagan'
@@ -503,18 +513,18 @@
                           ]
                         },
                         {
-                          name: 'Amy Postin Pilagan - Jackson <br> <span style="color: red;">Husband</span>: Frank Jackson'
+                          name: 'Amy Postin Pilagan - Jackson <br> <span class="husband">Husband</span>: Frank Jackson'
                         }
                       ]
                     },
                     {
-                      name: 'Espiritu Pilagan (Espir) <br> <span style="color: green;">Wife</span>: (Rosing)',
+                      name: 'Espiritu Pilagan (Espir) <br> <span class="wife">Wife</span>: (Rosing)',
                       branches: [
                         {
-                          name: 'Eulogio Budao Pilagan Sr. <br> <span style="color: green;">Wife</span>: -',
+                          name: 'Eulogio Budao Pilagan Sr. <br> <span class="wife">Wife</span>: -',
                           branches: [
                             {
-                              name: 'Emily Ruth Batallang Pilagan - Ebeng <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Emily Ruth Batallang Pilagan - Ebeng <br> <span class="husband">Husband</span>: -',
                               branches: [
                                 {
                                   name: 'Krishna Pilagan Ebeng'
@@ -529,7 +539,7 @@
                               collapsed: false
                             },
                             {
-                              name: 'Eden Batallang Pilagan - Feraldo <br> <span style="color: red;">Husband</span>: -',
+                              name: 'Eden Batallang Pilagan - Feraldo <br> <span class="husband">Husband</span>: -',
                               branches: [
                                 {
                                   name: 'Tyron Pilagan Feraldo'
@@ -551,7 +561,7 @@
                           ]
                         },
                         {
-                          name: 'Florencio Budao Pilagan <br> <span style="color: green;">Wife</span>: -',
+                          name: 'Florencio Budao Pilagan <br> <span class="wife">Wife</span>: -',
                           branches: [
                             {
                               name: 'Mark Daniel Tagoda Pilagan'
@@ -571,7 +581,7 @@
                           ]
                         },
                         {
-                          name: 'Virgilio Budao Pilagan <br> <span style="color: green;">Wife</span>: -',
+                          name: 'Virgilio Budao Pilagan <br> <span class="wife">Wife</span>: -',
                           branches: [
                             {
                               name: 'Vialyn Barrozo Pilagan'
@@ -581,32 +591,32 @@
                       ]
                     },
                     {
-                      name: 'Pacita Pilagan Gannad (Pasing) <br> <span style="color: red;">Husband</span>: -',
+                      name: 'Pacita Pilagan Gannad (Pasing) <br> <span class="husband">Husband</span>: -',
                       branches: [
                         {
-                          name: 'Julieta Pilagan Gannad - Florida (Jean) <br> <span style="color: red;">Husband</span>: -',
+                          name: 'Julieta Pilagan Gannad - Florida (Jean) <br> <span class="husband">Husband</span>: -',
                           branches: []
                         },
                         {
-                          name: 'Josephine Pilagan Gannad - Libranda (Josie)<br> <span style="color: red;">Husband</span>: -',
+                          name: 'Josephine Pilagan Gannad - Libranda (Josie)<br> <span class="husband">Husband</span>: -',
                           branches: []
                         },
                         {
-                          name: 'Dorotea Pilagan Gannad - Curba (Meldy)<br> <span style="color: red;">Husband</span>: -',
+                          name: 'Dorotea Pilagan Gannad - Curba (Meldy)<br> <span class="husband">Husband</span>: -',
                           branches: []
                         },
                         {
-                          name: 'Elizabeth Pilagan Gannad - Sealongo (Sabbeth)<br> <span style="color: red;">Husband</span>: -',
+                          name: 'Elizabeth Pilagan Gannad - Sealongo (Sabbeth)<br> <span class="husband">Husband</span>: -',
                           branches: []
                         }
                       ]
                     },
                     {
-                      name: 'Avelina Pilagan - Lumpangi - Arcardo (Belen) <br> First <span style="color: red;">Husband</span>: - <br> Second <span style="color: red;">Husband</span>: Domingo Arcardo',
+                      name: 'Avelina Pilagan - Lumpangi - Arcardo (Belen) <br> First <span class="husband">Husband</span>: - <br> Second <span class="husband">Husband</span>: Domingo Arcardo',
                       branches: [
                         { name: 'Emily Pilagan Lumpangi' },
                         {
-                          name: 'Dionie Pilagan Lumpangi <br> <span style="color: green;">Wife</span>: -',
+                          name: 'Dionie Pilagan Lumpangi <br> <span class="wife">Wife</span>: -',
                           branches: [
                             {
                               name: 'Spencer Rio Lockey Lumpangi'
@@ -617,7 +627,7 @@
                           ]
                         },
                         {
-                          name: 'Leo Pilagan Lumpangi <br> <span style="color: green;">Wife</span>: -',
+                          name: 'Leo Pilagan Lumpangi <br> <span class="wife">Wife</span>: -',
                           branches: [
                             {
                               name: 'Hannah Lumpangi'
@@ -628,11 +638,11 @@
                           ]
                         },
                         {
-                          name: 'Giovanni Pilagan Arcardo <br> <span style="color: green;">Wife</span>: -',
+                          name: 'Giovanni Pilagan Arcardo <br> <span class="wife">Wife</span>: -',
                           branches: []
                         },
                         {
-                          name: 'Jay-anne Pilagan Arcardo <br> <span style="color: red;">Husband</span>: -',
+                          name: 'Jay-anne Pilagan Arcardo <br> <span class="husband">Husband</span>: -',
                           branches: []
                         }
                       ]
@@ -644,17 +654,17 @@
             {
               id: 'C',
               parent: 'A',
-              name: 'Alvaro Dukey <br> <span style="color: green;">Wife</span>: -',
+              name: 'Alvaro Dukey <br> <span class="wife">Wife</span>: -',
               branches: [
                 {
-                  name: 'Alfredo Dukey (Pidong)',
+                  name: 'Alfredo Dukey (Pidong) <br> <span class="wife">Wife</span>: -',
                   branches: [{ name: 'Ofelia Dukey - Vidal' }, { name: 'Medina Dukey - Guiao' }]
                 },
                 {
-                  name: 'Arsenio Dukey (Senio)',
+                  name: 'Arsenio Dukey (Senio) <br> <span class="wife">Wife</span>: -',
                   branches: [
                     {
-                      name: 'Jaime Dukey <br> <span style="color: green;">Wife</span>: -',
+                      name: 'Jaime Dukey <br> <span class="wife">Wife</span>: -',
                       branches: [
                         {
                           name: 'Elmer Dukey'
@@ -668,24 +678,24 @@
                       ]
                     },
                     {
-                      name: 'Minda Dukey - Benamir <br> <span style="color: red;">Husband</span>: Noel Benamir',
+                      name: 'Minda Dukey - Benamir <br> <span class="husband">Husband</span>: Noel Benamir',
                       branches: [
                         {
                           name: 'Michael Dukey Benamir'
                         },
                         {
-                          name: 'Merylyn Dukey Benamir - Castro <br> <span style="color: red;">Husband</span>: -',
+                          name: 'Merylyn Dukey Benamir - Castro <br> <span class="husband">Husband</span>: -',
                           branches: []
                         },
                         {
-                          name: 'Mirvin Dukey Benamir <br> <span style="color: green;">Wife</span>: -',
+                          name: 'Mirvin Dukey Benamir <br> <span class="wife">Wife</span>: -',
                           branches: []
                         },
                         {
                           name: 'Milyn Dukey Benamir'
                         },
                         {
-                          name: 'Mayeth Dukey Benamir - Belen <br> <span style="color: red;">Husband</span>: -',
+                          name: 'Mayeth Dukey Benamir - Belen <br> <span class="husband">Husband</span>: -',
                           branches: []
                         },
                         {
@@ -697,7 +707,7 @@
                       ]
                     },
                     {
-                      name: 'Veirnessa Dukey - Fabian <br> <span style="color: red;">Husband</span>: -',
+                      name: 'Veirnessa Dukey - Fabian <br> <span class="husband">Husband</span>: -',
                       branches: [
                         {
                           name: 'Marisel Dukey Fabian'
@@ -711,7 +721,7 @@
                       ]
                     },
                     {
-                      name: 'Lucia Dukey - Rey <br> <span style="color: red;">Husband</span>: -',
+                      name: 'Lucia Dukey - Rey <br> <span class="husband">Husband</span>: -',
                       branches: [
                         {
                           name: 'Ranie Dukey - Rey'
@@ -728,7 +738,7 @@
                       ]
                     },
                     {
-                      name: 'Mileth Dukey - Gilo <br> <span style="color: red;">Husband</span>: Nestor Gilo',
+                      name: 'Mileth Dukey - Gilo <br> <span class="husband">Husband</span>: Nestor Gilo',
                       branches: [
                         {
                           name: 'Rovincent Dukey Gilo'
@@ -772,7 +782,7 @@
                       collapsed: false
                     },
                     {
-                      name: 'Dante Dukey <br> <span style="color: green;">Wife</span>: -',
+                      name: 'Dante Dukey <br> <span class="wife">Wife</span>: -',
                       branches: [
                         {
                           name: 'Lyra Dukey'
@@ -780,7 +790,7 @@
                       ]
                     },
                     {
-                      name: 'Jumar Dukey <br> <span style="color: green;">Wife</span>: -',
+                      name: 'Jumar Dukey <br> <span class="wife">Wife</span>: -',
                       branches: [
                         {
                           name: 'Ajay Dukey'
@@ -793,20 +803,20 @@
                   ]
                 },
                 {
-                  name: 'Ragsak Dukey <br> <span style="color: green;">Wife</span>: Maria Dukey',
+                  name: 'Ragsak Dukey <br> <span class="wife">Wife</span>: Maria Dukey',
                   branches: [
                     { name: 'Rag-o Dukey' },
                     { name: 'Jimmy Dukey' },
                     {
-                      name: 'Cathy Dukey - Lucenario <br> <span style="color: red;">Husband</span>: -'
+                      name: 'Cathy Dukey - Lucenario <br> <span class="husband">Husband</span>: -'
                     },
                     { name: 'Renato Dukey' },
                     { name: 'Vicente Dukey' },
                     {
-                      name: 'Ruby Dukey - Lingbaoan <br> <span style="color: red;">Husband</span>: -'
+                      name: 'Ruby Dukey - Lingbaoan <br> <span class="husband">Husband</span>: -'
                     },
                     {
-                      name: 'Berneth Dukey - Ubuan <br> <span style="color: red;">Husband</span>: -'
+                      name: 'Berneth Dukey - Ubuan <br> <span class="husband">Husband</span>: -'
                     },
                     { name: 'Severo Dukey' },
                     { name: 'Mary Ann Dukey' },
@@ -816,10 +826,10 @@
                   ]
                 },
                 {
-                  name: 'Narcisa Dukey Bang-a <br> <span style="color: red;">Husband</span>: -'
+                  name: 'Narcisa Dukey Bang-a <br> <span class="husband">Husband</span>: -'
                 },
                 {
-                  name: 'Salvador Cortez',
+                  name: 'Salvador Cortez <br> <span class="wife">Wife</span>: -',
                   branches: [
                     {
                       name: '-'
@@ -839,15 +849,15 @@
                   ]
                 },
                 {
-                  name: 'Jovita Dukey - Camide <br> <span style="color: red;">Husband</span>: -',
+                  name: 'Jovita Dukey - Camide <br> <span class="husband">Husband</span>: -',
                   branches: [
                     {
-                      name: 'Norma Dukey Camide - Ramirez <br> <span style="color: red;">Husband</span>: -',
+                      name: 'Norma Dukey Camide - Ramirez <br> <span class="husband">Husband</span>: -',
                       branches: []
                     },
                     { name: 'Eldemio Dukey Camide' },
                     {
-                      name: 'Elma Dukey Camide - Daodaoen <br> <span style="color: red;">Husband</span>: -',
+                      name: 'Elma Dukey Camide - Daodaoen <br> <span class="husband">Husband</span>: -',
                       branches: []
                     },
                     { name: 'Erik Dukey Camide' }
@@ -917,8 +927,10 @@
         title: {
           text: 'Dukey-Pilagan Family Tree',
           style: {
-            fontSize: '3.5rem',
-            fontWeight: 'bold'
+            fontSize: '2.5rem',
+            fontWeight: 'bold',
+            textDecoration: 'underline',
+            padding: '1rem'
           }
         },
         series: [
@@ -927,7 +939,7 @@
             data: flattenedData(),
             marker: {
               symbol: 'circle',
-              radius: 7,
+              radius: 6,
               fillColor: '#ffffff',
               lineWidth: 3
             },
@@ -944,7 +956,7 @@
                 paddingLeft: 15,
                 paddingRight: 15,
                 whiteSpace: 'nowrap',
-                fontSize: '18px'
+                fontSize: '19px'
               },
               x: 24,
               crop: false,
@@ -984,9 +996,16 @@
       })
 
       setTimeout(() => {
-        // scroll atleast 50% to the left of page
-        window.scrollTo(window.innerWidth / 0.65, 0)
-      }, 500)
+        // get chart title and scroll to location
+        const title = document.getElementsByClassName('highcharts-title')[0]
+        if (title) {
+          title.scrollIntoView({ 
+            behavior: 'instant',
+            inline: 'center',
+            block: 'center'
+          })
+        }
+      }, 750)
     </script>
   </body>
 </html>
