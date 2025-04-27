@@ -31,6 +31,18 @@
         touch-action: pan-x pan-y pinch-zoom !important;
       }
 
+      .highcharts-description {
+        font-style: italic;
+      }
+
+      .highcharts-description h2 {
+        font-size: 1.5rem;
+      }
+
+      .highcharts-description p {
+        font-size: 1.25rem;
+      }
+
       tspan.husband {
         fill: red;
         color: red;
@@ -44,16 +56,27 @@
   </head>
   <body>
     <div id="container">Loading...</div>
+    <div class="highcharts-description">
+      <h2>Who is Dukey Pilagan</h2>
+      <p>
+        - From Besao Mt. Province<br>
+        - Occupation: Forestry<br>
+        - Married to Bannadi/Bannagi<br>
+        - Two son's Ignacio and Alvaro
+      </p>
+      <br><br>
+      <h2>Why are there two family names, Dukey and Pilagan, in our family tree?</h2>
+      <p>
+        The two siblings, Ignacio (elder) and Alvaro (younger), chose to honor their father, Dukey Pilagan, by using parts of his name as their surnames. Ignacio took "Pilagan," while Alvaro chose "Dukey," as a way to remember and carry on their father's legacy when the government started requiring people to officially register their names.<br>
+        They grew up near the Bulala-Leguey area and later moved to Gregorio del Pilar (Bussot-Concepcion) as they started their own families.
+      </p>
+    </div>
 
     <script>
       const data = [
         {
           id: 'A',
-          name: `Dukey Pilagan <br>
-            -From Besao Mt. Province <br>
-            -Occupation: Forestry <br>
-            <span class="wife">Wife</span>: (Bannadi/Bannagi)
-          `,
+          name: `Dukey Pilagan <br> <span class="wife">Wife</span>: (Bannadi/Bannagi)`,
           branches: [
             {
               name: 'Ignacio Pilagan (Ignas)',
@@ -125,7 +148,7 @@
                             {
                               name: 'Jovy Pilagan Polides - Ciriaco <br> <span class="husband">Husband</span>: Juan Ciriaco',
                               branches: [
-                                { name: 'Jonabel P. Ciriaco' },
+                                { name: 'Jonabelle Ciriaco - Dollente <br> <span class="husband">Husband</span>: Abel Dollente', branches: [] },
                                 { name: 'Myrna Jonalyn P. Ciriaco' }
                               ]
                             },
