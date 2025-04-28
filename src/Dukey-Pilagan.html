@@ -20,8 +20,8 @@
       }
 
       #container {
-        height: 550rem;
-        width: 350rem;
+        height: 580rem;
+        width: 320rem;
         -webkit-overflow-scrolling: touch;
         position: relative;
       }
@@ -570,10 +570,10 @@
                               name: 'Liezel S. Pilagan - Barba <br> <span class="husband">Husband</span>: John Von Barba',
                               branches: [
                                 {
-                                  name: 'Zamira P. Barba'
+                                  name: 'Lj Zamira P. Barba'
                                 },
                                 {
-                                  name: 'VJ P. Barba'
+                                  name: 'Heinz Vj P. Barba'
                                 }
                               ]
                             },
@@ -587,7 +587,7 @@
                           name: 'Marilou P. Pilagan - Bigsot <br> <span class="husband">Husband</span>: Romeo Bigsot',
                           branches: [
                             {
-                              name: 'Jerome S. Bigsot'
+                              name: 'Jerome P. Bigsot'
                             }
                           ]
                         },
@@ -769,10 +769,10 @@
                           name: 'Elmer Dukey'
                         },
                         {
-                          name: 'Elvira Dukey - Padsing'
+                          name: 'Elvira Dukey - Padsing <br> <span class="husband">Husband</span>: -'
                         },
                         {
-                          name: 'Perla Dukey - Podes'
+                          name: 'Perla Dukey - Podes <br> <span class="husband">Husband</span>: -'
                         }
                       ]
                     },
@@ -1051,7 +1051,7 @@
           text: '<h2>Who is Dukey Pilagan?</h2>' +
                 'From: Besao, Mt. Province<br>' +
                 'Occupation: Forestry<br>' +
-                'Married to Bannadi/Bannagi<br>' +
+                'Married to Bannadi/Bannagi (Ilocos Sur)<br>' +
                 'Two son\'s Ignacio and Alvaro. The two grew up near the Bulala-Leguey area and later moved to Gregorio del Pilar (Bussot-Concepcion) as they started their own families.<br>' +
                 '<h2>Why are there two family names, Dukey and Pilagan, in our family tree?</h2>' +
                 'The two siblings, Ignacio (elder) and Alvaro (younger), chose to honor their father, Dukey Pilagan, by using parts of his name as their surnames. ' +
@@ -1069,10 +1069,11 @@
             type: 'treegraph',
             data: flattenedData(),
             marker: {
+              enabled: true,
               symbol: 'circle',
               radius: 6,
               fillColor: '#ffffff',
-              lineWidth: 3
+              lineWidth: 3,
             },
             link: {
               lineWidth: 2,
@@ -1087,7 +1088,8 @@
                 paddingLeft: 15,
                 paddingRight: 15,
                 whiteSpace: 'nowrap',
-                fontSize: '19px'
+                fontWeight: 'bold',
+                fontSize: '18px'
               },
               x: 24,
               crop: false,
